@@ -12,7 +12,3 @@ Open the file you want to stop tracking in VS Code and run `Git: Ignore this tra
 
 You can of course undo this but running the `Git: Include this file from now (track it again and undo --skip-work-tree)`.
 
-
-### 1.0.0
-
-Initial release of the Visual Studio Code Git Ignore Tracked Files extension. 

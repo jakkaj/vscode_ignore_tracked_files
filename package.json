@@ -1,8 +1,10 @@
 {
 	"name": "gitignoretrackedfles",
+	"publisher": "JordanKnight",
 	"displayName": "Git Ignore Tracked Files",
 	"description": "Allows you to quickly stop checking in files that you want in your git repo, but don't want *new* changes in your repo like .env files or other configs.",
 	"version": "0.0.1",
+	"repository": "https://github.com/jakkaj/vscode_ignore_tracked_files",
 	"engines": {
 		"vscode": "^1.37.0"
 	},

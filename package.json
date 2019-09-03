@@ -3,7 +3,7 @@
 	"publisher": "JordanKnight",
 	"displayName": "Git Ignore Tracked Files",
 	"description": "Allows you to quickly stop checking in files that you want in your git repo, but don't want *new* changes in your repo like .env files or other configs.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"repository": "https://github.com/jakkaj/vscode_ignore_tracked_files",
 	"engines": {
 		"vscode": "^1.37.0"
@@ -20,11 +20,11 @@
 		"commands": [
 			{
 				"command": "extension.gitSkipWorktree",
-				"title": "Git: Ignore this tracked file from now (--skip-work-tree)"				
+				"title": "Git: Ignore this tracked file from now (--skip-work-tree)"
 			},
 			{
 				"command": "extension.undoGitSkipWorktree",
-				"title": "Git: Include this file from now (track it again and undo --skip-work-tree)"				
+				"title": "Git: Include this file from now (track it again and undo --skip-work-tree)"
 			}
 		]
 	},

@@ -1,0 +1,47 @@
+{
+	"name": "gitignoretrackedfles",
+	"displayName": "Git Ignore Tracked Files",
+	"description": "Allows you to quickly stop checking in files that you want in your git repo, but don't want *new* changes in your repo like .env files or other configs.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.gitSkipWorktree",
+		"onCommand:extension.undoGitSkipWorktree"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.gitSkipWorktree",
+				"title": "Git: Ignore this tracked file from now (--skip-work-tree)"				
+			},
+			{
+				"command": "extension.undoGitSkipWorktree",
+				"title": "Git: Include this file from now (track it again and undo --skip-work-tree)"				
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.37.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.2"
+	}
+}
